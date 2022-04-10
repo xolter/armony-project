@@ -1,0 +1,3 @@
+[submodule "armony-app"]
+	path = armony-app
+	url = git@github.com:xolter/armony-app.git
