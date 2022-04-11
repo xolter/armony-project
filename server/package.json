@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node server.js",
     "build": "cd ../armony-app && npm install && npm run build",
@@ -12,6 +13,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "graphql": "^15.8.0",
+    "graphql-request": "^4.2.0",
+    "sib-api-v3-sdk": "^8.3.0"
   }
 }
