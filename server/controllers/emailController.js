@@ -1,3 +1,4 @@
+import 'dotenv/config'
 import SibApiV3Sdk from 'sib-api-v3-sdk';
 
 export const transactionalEmail = async(req, res) => {
@@ -20,7 +21,7 @@ export const transactionalEmail = async(req, res) => {
 export const createSendingBlueContact = async(req, res) => {
     const defaultClient = SibApiV3Sdk.ApiClient.instance;
     let apiKey = defaultClient.authentications['api-key'];
-    apiKey.apiKey = "";
+    apiKey.apiKey = process.env.NODEJS_SERVER_EMAIL_API_KEY;
     let apiInstance = new SibApiV3Sdk.ContactsApi();
     let createContact = new SibApiV3Sdk.CreateContact();
 

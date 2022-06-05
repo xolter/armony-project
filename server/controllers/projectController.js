@@ -1,6 +1,7 @@
+import 'dotenv/config'
 import { request, gql } from 'graphql-request';
 
-const graphqlAPI = process.env.REACT_APP_API_GRAPHCMS || "";
+const graphqlAPI = process.env.NODEJS_SERVER_API_GRAPHCMS;
 
 export const projectList = async(req, res) => {
 
